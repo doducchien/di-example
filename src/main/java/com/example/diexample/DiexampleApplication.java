@@ -11,7 +11,7 @@ public class DiexampleApplication {
 	public static void main(String[] args) {
 		ApplicationContext ctx = SpringApplication.run(DiexampleApplication.class, args);
 		MyController myController =(MyController) ctx.getBean("myController");
-		String result = myController.sayHello();
+		String result = myController.testLang();
 		System.out.println(result);
 	}
 
