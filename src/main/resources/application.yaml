@@ -1,0 +1,19 @@
+spring:
+    profiles:
+        active:
+            - VN
+            - prod
+
+datasource:
+    username: username
+    password: password
+    jdbcUrl: url
+
+---
+
+spring:
+    profiles: prod
+datasource:
+    username: usernamePROD
+    password: passwordPROD
+    jdbcUrl: urlPROD
